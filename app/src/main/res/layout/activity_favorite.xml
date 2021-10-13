@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllMovies"
+    android:orientation="vertical"
+    android:id="@+id/coordinator_layout">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ff5500"
+            android:id="@+id/toolbarbg">
+        </ImageView>
+
+        <ImageView
+            android:layout_below="@id/toolbarbg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_wave"
+            android:rotation="180"
+            android:layout_marginTop="-10dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/imgbtn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+
+                android:background="@drawable/vector_back">
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorites"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/retrorica">
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/imgbtn_delete"
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tooltipText="Delete All Favorites"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/vector_delete">
+            </ImageButton>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_resultcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Results..."
+        android:fontFamily="@font/retrorica"
+        android:alpha="0.75"
+        android:textSize="18dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/orange_500">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

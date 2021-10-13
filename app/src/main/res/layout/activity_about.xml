@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllMovies"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ff5500"
+            android:id="@+id/toolbarbg">
+        </ImageView>
+
+        <ImageView
+            android:layout_below="@id/toolbarbg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_wave"
+            android:rotation="180"
+            android:layout_marginTop="-10dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:id="@+id/imgbtn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+
+                android:background="@drawable/vector_back">
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/retrorica">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/img_logomtg"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:tint="@color/orange_500"></ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Created by Steward Melvin Tang"
+        android:fontFamily="@font/retrorica"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="For Tugas PTS"
+        android:fontFamily="@font/retrorica"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Picasso, Realm Database, TheMovieDB, Android Networking"
+        android:fontFamily="@font/retrorica"
+        android:textSize="16dp"
+        android:layout_marginTop="35dp"></TextView>
+
+
+</LinearLayout>
